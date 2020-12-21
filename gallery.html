@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  height:200px;
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
+</head>
+<body>
+    <div class="navigation">
+        <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="contact_us.html">About Us</a></li>
+            <li><a href="Departments.html">Departments</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="#examination">Examination</a></li>
+            <li><a href="xception.html">Events</a></li>
+            <li><a href="Loginuec.html">Login</a></li>
+            <li><a href="#academics">Academics</a></li>
+        </ul>
+    </div>
+<div style="text-align:center">
+  <h2>UEC Image Gallery</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <a href="images/uecbuilding.jpg" target="blank"> <img src="images/uecbuilding.jpg" alt="Lights" style="width:100%"></a>    
+  </div>
+  <div class="column">
+    <a href="images/ueculake.png" target="blank"> <img src="images/ueculake.png" alt="Lights" style="width:100%"></a>    
+  </div>
+  <div class="column">
+    <a href="images/uecuairplane.jpg" target="blank"> <img src="images/uecuairplane.jpg" alt="Lights" style="width:100%"></a>    
+  </div>
+  <div class="column">
+    <a href="images/uecufest.jpg" target="blank"> <img src="images/uecufest.jpg" alt="Lights" style="width:100%"></a>    
+  </div>
+</div>
+<div class="row">
+    <div class="column">
+      <a href="images/pic2.jpg" target="blank"> <img src="images/pic2.jpg" alt="Lights" style="width:100%"></a>
+    </div>
+    <div class="column">
+      <a href="images/pic3.jpg" target="blank"> <img src="images/pic3.jpg" alt="Lights" style="width:100%"></a>    
+    </div>
+    <div class="column">
+      <a href="images/pic4.jpg" target="blank"> <img src="images/pic4.jpg" alt="Lights" style="width:100%"></a>    
+    </div>
+    <div class="column">
+      <a href="images/pic5.jpg" target="blank"> <img src="images/pic5.jpg" alt="Lights" style="width:100%"></a>    
+    </div>
+</div>
+
+</body>
+</html>

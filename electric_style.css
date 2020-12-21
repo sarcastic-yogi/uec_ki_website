@@ -1,0 +1,53 @@
+h3{
+    text-align: center;
+    font-size: 30px;
+}
+.main{
+    margin: auto;
+    font-size: 20px;
+    text-align: center;
+    border: 15px solid navy;
+    width:700px;
+    padding: 5%;
+}
+.navigation ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgba(15,108,107,0.67);
+    font-family:candara;
+}
+.navigation ul li
+{
+        float: left;
+}
+.navigation  li a 
+{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration:none;
+    font-size:24px;
+}
+.navigation li a.active 
+{
+    background-color: #4CAF50;
+    color: white;
+}
+.navigation li a:hover 
+{
+    background-color: #ddd;
+    color: #96641E;
+}
+hr.class-1 
+{ 
+    border-top: 10px solid rgba(15,108,107,0.67); 
+}
+div2 {
+  background-color: rgba(15,108,107,0.67);
+  width: 100px;
+  font-size:40px;
+  padding: 10px;
+  color:white;
+  font-family:candara;
+}
