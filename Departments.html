@@ -1,74 +1,192 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="depastyle.css">
-    <title>Departments | UEC</title>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Departments</title>
+  <style>
+    * {
+      margin: 0px;
+    }
+    .strip{
+  height: 20px;
+  background-color:rgba(179, 48, 48, 0.63);
+  color: white;
+}
+    .navigation{
+      padding-top: 4%;
+    }
+    .navigation ul {
+      list-style-type: none;
+      overflow: hidden;
+      background-color: rgba(15, 108, 107, 0.67);
+      font-family: candara;
+    }
+
+    .navigation ul li {
+      float: left;
+    }
+
+    .navigation li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+      font-size: 24px;
+    }
+
+    .navigation li a.active {
+      background-color: #4caf50;
+      color: white;
+    }
+
+    .navigation li a:hover {
+      background-color: #ddd;
+      color: #96641e;
+    }
+    .branch-container{
+      padding-top: 10%;
+    }
+
+    .row {
+      margin-left: 5%;
+      display: flex;
+    }
+
+    .column {
+      flex: 33%;
+      padding: 10px;
+      height: 300px;
+      font-family: cursive;
+      text-align: center;
+    }
+
+    .column:hover {
+      background-color: black;
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 100px;
+      border-color: white;
+      color: white;
+    }
+
+    .column:hover img {
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 100px;
+      border-color: white;
+    }
+
+    .animated-text {
+      color: #fff;
+      position: relative;
+      padding: 0 40px;
+      height: 70px;
+      overflow: hidden;
+      width: fit-content;
+      margin-left: 15%;
+    }
+
+    .line {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 25px;
+      line-height: 60px;
+    }
+
+    .line:first-child {
+      animation: anim 7s infinite cubic-bezier(0.24, 0.79, 0.59, 1.13);
+    }
+
+    @keyframes anim {
+      0% {
+        margin-top: 0;
+      }
+
+      50% {
+        margin-top: -60px;
+      }
+
+      100% {
+        margin-top: 0;
+      }
+    }
+    
+  </style>
 </head>
+
 <body>
-    <div class="navigation">
-        <ul>
-            <li><a href="homepage.html">Home</a></li>
-            <li><a href="contact_us.html">About Us</a></li>
-            <li><a href="Departments.html">Departments</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#examination">Examination</a></li>
-            <li><a href="xception.html">Events</a></li>
-            <li><a href="Loginuec.html">Login</a></li>
-            <li><a href="#academics">Academics</a></li>
-          </ul>
+  <div class="strip">
+    <marquee> &#9888; In awake of corona virus maintain social distancing and follow government norms strictly.
+      Colleges will be opening soon.
+    </marquee>
+  </div>
+  <div class="intro" style="padding-top: 1%;">
+    <a href="index.html"><img src="images/uecu.jpg" width="100px" , height="100px" style="float: left; padding-left: 170px" ></a>
+    <h1 style="font-family: candara; font-size: 40px; text-align: center;padding-left: 20%;" >
+      <div class="animated-text" style="color: white;text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;">
+        <div class="line">Departments@UEC</div>
+        <div class="line">विभाग@उइका</div>
+      </div>
+    </h1>
+  </div>
+  <div class="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="contact_us.html">About Us</a></li>
+      <li><a href="Departments.html">Departments</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="#examination">Examination</a></li>
+      <li><a href="xception.html">Events</a></li>
+      <li><a href="login/LOGIN.html">Login</a></li>
+      <li><a href="#academics">Academics</a></li>
+    </ul>
+  </div>
+
+  <div class="branch-container">
+    <div class="row">
+      <div class="column">
+        <div>
+          <a href="CSEdepartment.html"><img src="images/comp-eng.png" alt="cslogo" /></a>
+          <div class="logotxt">COMPUTER SCIENCE AND ENGINEERING</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="images">
+          <a href="electronics.html"><img src="images/design.png" alt="eclogo" /></a>
+          <div class="logotxt">ELECTRONICS ENGINEERING</div>
+        </div>
+      </div>
+      <div class="column">
+        <div>
+          <a href="mechdepartment.html"><img src="images/mechanical.png" alt="mechlogo" /></a>
+          <div class="logotxt">MECHANICAL ENGINEERING</div>
+        </div>
+      </div>
     </div>
-    <div class="intro">
-        <img src="images/uecu.jpg" width="110px", height="110px" style="float: left;padding-left: 170px;">
-        <h1 style="font-family:candara; font-size:40px; text-align: left;">Ujjain Engineering College</h1>
-        <p style="font-size:30px; font-family:candara;text-align: left;">Indore road, Ujjain-456010</p>
+    <div class="row">
+      <div class="column">
+        <div>
+          <a href="electrical.html"><img src="images/electrical-eng.png" alt="eleclogo" /></a>
+          <div class="logotxt">ELECTRICAL ENGINEERING</div>
+        </div>
+      </div>
+      <div class="column">
+        <div>
+          <img src="images/chemical-eng.png" alt="chemlogo" />
+          <div class="logotxt">CHEMICAL ENGINEERING</div>
+        </div>
+      </div>
+      <div class="column">
+        <div>
+          <img src="images/civil-eng.png" alt="civillogo" />
+          <div class="logotxt">CIVIL ENGINEERING</div>
+        </div>
+      </div>
     </div>
-    <hr class=class-1>
-    <hr class=class-1>
-    <div class="two">
-        <h2 class="one">Departments offered by Ujjain Engineering College</h2>
-        <br>
-        <center>
-        <img src="images/idea.jpg" id="hpage">
-        </center>
-        <br>
-        <br>
-    </div>
-<div class="flow">
-    <br>
-    <br>
-    <div class="card" onclick="window.open('CSEdepartment.html')">
-            <img src="images/CSE.jpg" alt="logo" style="width:350px; height:350px;">
-            <h4><b>Computer Science</b></h4>
-    </div>
-    <div class="card" onclick="window.open('mechdepartment.html')">
-            <img src="images/Mechanical.jpg" alt="logo" style="width:350px; height:350px;">
-            <h4><b>Mechanical</b></h4>
-    </div>
-    <div class="card" onclick="window.open('electrical.html')">
-      
-            <img src="images/ElectE.jpg" alt="logo" style="width:350px; height:350px;">
-            
-            <h4><b>Electrical</b></h4>
-       
-    </div>
-    <div class="card" onclick="window.open('electronics.html')">
-        
-            <img src="images/ece.jpg" alt="logo" style="width:350px; height:350px;">
-            <h4><b>Electronics and Communication</b></h4>
-       
-    </div>
-    <div class="card" onclick="window.open('http://www.uecu.ac.in/Departments/Department_Home_New.aspx?Dept_Id=%C2%B5')">
-       
-            <img src="images/Chemical.jpg" alt="logo" style="width:350px; height:350px;">
-            <h4><b>Chemical</b></h4>
-       
-    </div>
-    <div class="card" onclick="window.open('http://www.uecu.ac.in/Departments/Department_Home_New.aspx?Dept_Id=%C2%B5')">
-       
-            <img src="images/Civil1.jpg" alt="logo" style="width:350px; height:350px;">
-            <h4><b>Civil</b></h4>
-    </div>
-</div>
+  </div>
 </body>
+
 </html>

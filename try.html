@@ -10,7 +10,7 @@
     h1{
       text-transform: uppercase;
     }
-    div{
+    .college-name{
       display: inline-block;
       height:60px;
       overflow: hidden;
@@ -19,6 +19,17 @@
     span{
       display: inline-block;
       animation: rotate 10s infinite ease-in;
+    }
+    .image:hover{
+      background-color: red;
+    }
+    img:hover{
+      
+      border-width: 2px;
+      border-style: solid;
+      border-radius: 100px;
+      border-color: white;
+      
     }
     @keyframes rotate{
       0%{
@@ -31,6 +42,46 @@
         transform: translateY(0px);
       }
     }
+    .counters{
+      display: flex;
+    }
+    .counter-1{
+      flex: 33%;
+      height: 200px;
+    }
+    .counter-2{
+      flex: 33%;
+      height: 200px;
+    }
+    .counter-3{
+      flex: 33%;
+      height: 200px;
+    }
+    @property --num {
+  syntax: "<integer>";
+  initial-value: 100;
+  inherits: false;
+    }
+
+  .counter-1 {
+  animation: counter 3s ease-in-out;
+  counter-reset: num var(--num);
+  font: 800 40px system-ui;
+  padding: 2rem;
+}
+.counter-1::after {
+  content: counter(num);
+}
+
+@keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 100;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -44,7 +95,18 @@
     </div>
   </h1>
 </div>
+  <div class="image">
+    <img src="comp-eng.png" alt="cs logo">
+  </div>
+<div class="counters">
+  <div class="counter-1">
+  </div>
+  <div class="counter-2">
+  </div>
+  <div class="counter-3">
+  </div>
 
+</div>
 
 </body>
 </html>

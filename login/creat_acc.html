@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="creat_acc_style.css">
+  <title>Create account | UEC</title>
+  <link rel="icon" type="image/x-icon" href="TITLE_ICON_SMALL.ico">
+</head>
+<body>
+  <div class="animation-area">
+    <ul class="box-area">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+  <div class="one">
+    <div class="two">
+      <a href="/index.html">
+              <div class="crt_acc_logo">
+        <img src="LOGO1.png" alt="LOGO_UEC" height="80px" width="85px">
+      </div>
+      <div class="crt_acc_UEC">
+        UEC|उईका
+      </div> 
+    </a>
+      <form class="crt_acc_frm">
+        <span class="crt_acc_title">
+          Create account
+        </span>
+        <div class="req">
+          *all fields are required fill all the details correctly.
+        </div>
+          <div class="input-out " >
+            <select class="input-in" type="text" name="course" required>
+              <option value="btech">B.Tech</option>
+              <option value="mtech">M.tech</option>
+              <option selected="Select" value="s">Select your course</option>
+            </select>
+            <select class="input-in crs" name="course" aria-placeholder="hello" >
+              <option value="CSE">Computer Science and Engineering</option>
+              <option value="ME">Mechanical Engineering</option>
+              <option value="CE">Civil Engineering</option>
+              <option value="EE">Electrical Engineering</option>
+              <option value="CME">Chemical Engineering</option>
+              <option value="ECE">Electronics and Communication Engineering</option>
+              <option selected="Select" value="s">Select your branch</option>
+            </select> 
+          </div>
+        <div class="input-out " >
+          <input class="input-in" type="email" name="mail_id" placeholder="College mail-id" required>
+        </div>
+        <div class="input-out" >
+          <input class="input-in" type="text" name="enr_no" placeholder="Enrollment no." required>
+          <select class="input-in crs"  type="year" name="year" required>
+            <option value="two_0">2020</option>
+            <option value="two_1">2021</option>
+            <option selected="Select" value="s">Select year</option>
+          </select>
+        </div>
+        <div class="input-out" >
+          <input class="input-in" type="text" name="name" placeholder="First name" required>
+          <input class="input-in crsb" type="text" name="name" placeholder="Last name" required>
+        </div>
+        <div class="input-out " >
+          <input class="input-in" type="number" name="contact_no" placeholder="Mobile no." required>
+          <input type="date" class="input-in crsb" name="Dob"required>
+        </div>
+        <div class="input-out " >
+          <input class="input-in" type="text" name="username" placeholder="username" required>
+        </div>
+        <div class="input-out " >
+          <input class="input-in" type="password" name="password" placeholder="password" minlength="8" required>
+        </div>
+        <div class="btn">
+          <button class="btn_in">
+            Submit
+          </button>
+            <input class="btn_in" type="reset" >
+        </div>
+        </div>
+      </form>
+</div>  
+</div>
+</body>
+</html>

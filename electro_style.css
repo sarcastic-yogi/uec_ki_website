@@ -26,3 +26,9 @@ h3{
     padding-right: 40px;
     padding-top: 8px;
 }
+.copyright{
+    height: 50px;
+    background-color: midnightblue;
+    color: #4CAF50;
+    padding: 25px;
+  }

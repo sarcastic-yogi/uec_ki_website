@@ -11,15 +11,18 @@ body {
   margin: 0;
   font-family: Arial;
 }
+.navigation{
+  padding-top: 4%;
+}
 
-/* The grid: Four equal columns that floats next to each other */
 .column {
   float: left;
   width: 25%;
   padding: 10px;
+  height:300px;
+  background-color: black;
 }
 
-/* Style the images inside the grid */
 .column img {
   opacity: 0.8; 
   height:200px;
@@ -30,25 +33,75 @@ body {
   opacity: 1;
 }
 
-/* Clear floats after the columns */
-.row:after {
+/* .row:after {
   content: "";
   display: table;
   clear: both;
+} */
+.strip{
+  height: 20px;
+  background-color:rgba(179, 48, 48, 0.63);
+  color: white;
+}
+.animated-text {
+      color: #fff;
+      position: relative;
+      padding: 0 40px;
+      height: 70px;
+      overflow: hidden;
+      width: fit-content;
+      margin-left: 15%;
+    }
+.line{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  line-height: 60px;
+}
+
+.line:first-child{
+  animation: anim 7s infinite cubic-bezier(0.24, 0.79, 0.59, 1.13);
+}
+
+@keyframes anim {
+  0%{
+    margin-top: 0;
+  }
+  50%{
+    margin-top: -60px;
+  }
+  100%{
+    margin-top: 0;
+  }
 }
 </style>
 
 </head>
 <body>
+  <div class="strip">
+    <marquee> &#9888; In awake of corona virus maintain social distancing and follow government norms strictly.
+      Colleges will be opening soon.
+    </marquee>
+  </div>
+  <div class="intro" style="padding-top: 1%;">
+  <a href="index.html"><img src="images/uecu.jpg" alt="ueclogo" style="float: left;height:100px;padding-left: 20%;"></a>
+    <h1 style="font-family: candara; font-size: 40px; text-align: center;padding-left: 20%;" >
+      <div class="animated-text" style="color: white;text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;">
+        <div class="line">Gallery@UEC</div>
+        <div class="line">तस्वीरें@उइका</div>
+      </div>
+    </h1>
+  </div>
+  
     <div class="navigation">
         <ul>
-            <li><a href="homepage.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="contact_us.html">About Us</a></li>
             <li><a href="Departments.html">Departments</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="#examination">Examination</a></li>
             <li><a href="xception.html">Events</a></li>
-            <li><a href="Loginuec.html">Login</a></li>
+            <li><a href="login/LOGIN.html">Login</a></li>
             <li><a href="#academics">Academics</a></li>
         </ul>
     </div>
@@ -85,6 +138,11 @@ body {
     <div class="column">
       <a href="images/pic5.jpg" target="blank"> <img src="images/pic5.jpg" alt="Lights" style="width:100%"></a>    
     </div>
+</div>
+<div class="copyright" style="height: max-content;">
+  <p>&copy;Ujjain Engineering College</p>
+  <p>All rights reserved</p>
+  <p>2020-2021</p>
 </div>
 
 </body>
